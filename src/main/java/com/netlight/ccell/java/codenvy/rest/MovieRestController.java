@@ -25,7 +25,10 @@ public class MovieRestController
 
    public MovieRestController()
    {
-
+    if(movies.isEmpty()) {
+       newMovie(new Movie("The horse whisperer"));
+       newMovie(new Movie("The color purple"));
+    }
    }
 
    @RequestMapping(value = "/{name}", method = RequestMethod.GET)

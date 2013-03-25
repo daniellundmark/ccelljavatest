@@ -11,13 +11,12 @@ public class Movie
    }
 
 
-/*   public Movie(String title)
+   public Movie(String title)
    {
-      super();
-      randomizeId();
+      this();
       this.title = title;
    }
-*/
+
 
    public String getTitle()
    {
